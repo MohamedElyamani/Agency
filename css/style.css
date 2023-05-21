@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+:root{
+ --mainColor: #FFC800;   
+ --titleColor: #212529;
+ --textColor: #94999c;
+ --bgColor: #F8F9FA;
+}
+section{
+    padding: 4% 0;
+}
+a{
+    text-decoration: none;
+}
+textarea{
+    resize: none;
+}
+
+/*start nav bar*/
+#navbarNav ul li a{
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-right: 15px;
+    transition: all 0.3s ease-in-out;
+}
+#navbarNav ul li a:hover{
+    color: var(--mainColor) !important;
+}
+.navbar .navbar-nav a.active{
+    color: var(--mainColor) !important;
+}
+/*end nav bar*/
+
+/*start header*/
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0, 0, 0, 0.4)),
+    url(../img/header-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.head-content .text h2{
+    font-style: italic;
+    font-size: 3em;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+.head-content .text h1{
+    font-size: 5em;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+.head-content .text button{
+    width: 25%;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+/*end header*/
+
+
+/*start service*/
+
+.srv-title h2{
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--titleColor);
+}
+.srv-title p{
+    font-size: 1.1em;
+    font-style: italic;
+    color: var(--textColor);
+}
+
+.srv-item .srv-icon i{
+    background-color: var(--mainColor);
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+}
+
+.srv-item .srv-text p{
+    color: var(--textColor);
+}
+/*end service*/
+
+/*start portfolio*/
+#portfolio{
+    background-color: var(--bgColor);
+}
+.port-title h2{
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--titleColor);
+}
+.port-title p{
+    font-size: 1.1em;
+    font-style: italic;
+    color: var(--textColor);
+}
+
+.port-item .item-img img{
+    cursor: pointer;
+}
+.port-item .item-img .layer{
+    background-color: #fbff00da;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.port-item .item-img:hover .layer{
+      opacity: 1;
+}
+.item-title h4{
+    margin-bottom: 0;
+}
+.item-title p{
+    font-style: italic;
+    color: var(--textColor);
+}
+/*end portfolio*/
+
+/*start about*/
+.about-title h2{
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--titleColor);
+}
+.about-title p{
+    font-size: 1.1em;
+    font-style: italic;
+    color: var(--textColor);
+}
+/*end about*/
+
+/*start team*/
+#team{
+    background-color: var(--bgColor);
+}
+.team-title h2{
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--titleColor);
+}
+.team-title p{
+    font-size: 1.1em;
+    font-style: italic;
+    color: var(--textColor);
+}
+
+.team-content .team-member .member-img img{
+    border: 10px solid #DFE0E1;
+}
+.team-content .team-member .member-info h3{
+    margin-bottom: 0;
+}
+.team-content .team-member .member-info p{
+    color: var(--textColor);
+}
+.team-content .team-member .member-contact i,
+.foot-content i{
+    margin-right: 15px;
+    background: var(--titleColor);
+    width: 2.3em;
+    height: 2.3em;
+    line-height: 2.3em;   
+}
+.team-content .team-info p{
+    color: var(--textColor);
+}
+/*end team*/
+
+
+/*start sponsor*/
+.sponsor .spon-logo a img{
+    height: 2.75rem;
+}
+/*end sponsor*/
+
+/*start contact*/
+#contact{
+    background-color: #212529;
+    background-image: url(../img/map-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contact-title h2{
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #fff;
+}
+.contact-title p{
+    font-size: 1.1em;
+    font-style: italic;
+    color: var(--textColor);
+}
+
+.submit button{
+    background-color: var(--mainColor);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.submit button:hover{
+    background-color: #f5cd3b;
+}
+/*end contact*/
+
+
+
+
+
+
+
+@media screen and (max-width: 656px) {
+    .head-content .text button{
+        width: 40%;
+        font-size: 1em;
+    }
+}
